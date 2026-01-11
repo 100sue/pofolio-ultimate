@@ -48,7 +48,7 @@ Un exemple de portfolio, avec beaucoup de micro-interactions et un effet dynamiq
 ## Technologies, software, languages, frameworks, plugins used : ##
 
 - HTML5, CSS3, JavaScript.
-- Dependances : Bootstrap, Ionicons.
+- Dependances : Gsap, three.js.
 
 <br>
 
