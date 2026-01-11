@@ -34,12 +34,9 @@ Un exemple de portfolio, avec beaucoup de micro-interactions et un effet dynamiq
 
 - Minimalism Style
 - Responsive Website
-- White Wedding Dress Body Colour
-- Rose Pink Theme Colour
 - Circle Shaped Text
 - Animated Spinning Circle Background
 - Vertical Pop-up Webpage Switch
-- 3D Book Open Item Cards
 - Dynamic Portfolio with Animated Filters
 - Image Gallery Zoom Effect
 
