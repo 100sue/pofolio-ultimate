@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/asset/like-blue.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio: Roland APPERT</title>
+  </head>
+  <body>
+    <canvas id="bg-canvas"></canvas>
+    <canvas id="character-canvas"></canvas>
+
+    <div class="loader">
+      <div class="loader-content">
+        <div class="loader-title">Roland APPERT</div>
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dot dot-red"></div>
+            <div class="code-dot dot-yellow"></div>
+            <div class="code-dot dot-green"></div>
+          </div>
+          <div class="code-lines">
+            <div class="code-line">
+              <span class="comment"
+                >// Initializing portfolio experience...</span
+              >
+            </div>
+            <div class="code-line">
+              <span class="keyword">import</span> {
+              <span class="function">creativity</span>,
+              <span class="function">innovation</span> }
+              <span class="keyword">from</span>
+              <span class="string">'./skills'</span>;
+            </div>
+            <div class="code-line">
+              <span class="keyword">const</span> portfolio =
+              <span class="keyword">new</span>
+              <span class="function">Experience</span>({
+            </div>
+            <div class="code-line">
+              design: <span class="string">'exceptional'</span>,
+            </div>
+            <div class="code-line">
+              animations: <span class="string">'smooth'</span>,
+            </div>
+            <div class="code-line">
+              performance: <span class="string">'optimized'</span>
+            </div>
+            <div class="code-line">});</div>
+            <div class="code-line">
+              <span class="comment">// Loading 3D assets...</span>
+            </div>
+            <div class="code-line">
+              portfolio.<span class="function">initialize</span>();
+            </div>
+          </div>
+        </div>
+        <div class="loader-progress">
+          <div class="loader-progress-bar"></div>
+        </div>
+        <div class="loader-text">CHARGEMENT DES RESSOURCES</div>
+        <div class="loader-percentage">0%</div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <nav>
+        <div class="logo">My Mind</div>
+        <ul class="nav-links">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+      </nav>
+
+      <div class="mobile-menu">
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#experience">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Roland APPERT</h1>
+            <div class="hero-subtitle">
+              Je suis un <span class="rotating-text">Développeur UI/UX</span>
+            </div>
+            <p class="hero-description">
+              Créateur d'expériences digitales alliant design
+              innovant, performance optimale et interactions immersives.
+            </p>
+            <a href="#projects" class="cta-button">Découvrir mon travail</a>
+          </div>
+          <div class="hero-image-wrapper">
+            <div class="image-rings">
+              <div class="ring ring-1"></div>
+              <div class="ring ring-2"></div>
+              <div class="ring ring-3"></div>
+              <div class="orbit orbit-1">
+                <div class="planet planet-html">HTML</div>
+                <div class="planet planet-css">CSS</div>
+              </div>
+              <div class="orbit orbit-2">
+                <div class="planet planet-js">JS</div>
+                <div class="planet planet-react">Three</div>
+                <div class="planet planet-vue">Vue</div>
+              </div>
+              <div class="orbit orbit-3">
+                <div class="planet planet-python">SQL</div>
+                <div class="planet planet-node">Node</div>
+                <div class="planet planet-ts">NoSql</div>
+              </div>
+            </div>
+            <div class="developer-image">
+              <img src="./asset/logo_A-design_9_-removebg-preview.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-placeholder">
+            <img src="./asset/logo_A-design_5_-removebg-preview.png" alt="">
+        </div>
+        <div class="about-content">
+          <h2>Créer des expériences digitales mémorables</h2>
+          <p>
+            Passionné par l'intersection du design et de la technologie, je crée
+            des interfaces web qui allient esthétique moderne et performance
+            optimale. Chaque projet est une opportunité de repousser les limites
+            de l'expérience utilisateur et d'innover dans l'approche créative.
+          </p>
+          <p>
+            Mon objectif est de créer des interfaces qui ne sont
+            pas seulement belles, mais qui racontent une histoire et créent une
+            connexion émotionnelle avec les utilisateurs.
+
+          </p>
+          <div class="skills">
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">GSAP</span>
+            <span class="skill-tag">Three.js</span>
+            <span class="skill-tag">WebGL</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="subsection">
+        <div class="subsection-header">
+          <h2 class="subsection-title">Philosophie de Travail</h2>
+          <p class="subsection-subtitle">
+            Une approche centrée sur l'humain et l'innovation
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon">💡</div>
+            <h3>Innovation Continue</h3>
+            <p>
+              Veille technologique constante et adoption des dernières
+              innovations pour rester à la pointe du développement web.
+              Expérimentation avec les nouvelles APIs et frameworks émergents.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🤝</div>
+            <h3>Collaboration</h3>
+            <p>
+              Travail d'équipe efficace avec designers, développeurs backend et
+              product managers. Communication claire et documentation complète
+              pour une synergie optimale.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎯</div>
+            <h3>Orienté Résultats</h3>
+            <p>
+              Focus sur les objectifs business et les KPIs. Chaque décision de
+              design et technique est alignée avec les besoins utilisateurs et
+              les métriques de succès.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subsection">
+        <div class="subsection-header">
+          <h2 class="subsection-title">Mes Valeurs</h2>
+          <p class="subsection-subtitle">
+            Les principes qui guident mon travail au quotidien
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Performance</h3>
+            <p>
+              Sites ultra-rapides avec temps de chargement optimisés. Code
+              léger, lazy loading intelligent et optimisation des images pour
+              une expérience instantanée.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔒</div>
+            <h3>Sécurité</h3>
+            <p>
+              Protection des données utilisateurs, validation côté client et
+              serveur, prévention des failles XSS et CSRF. Conformité RGPD et
+              bonnes pratiques de sécurité.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">♻️</div>
+            <h3>Durabilité</h3>
+            <p>
+              Code maintenable et évolutif. Architecture modulaire, tests
+              automatisés et documentation détaillée pour faciliter les futures
+              évolutions et la collaboration.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subsection" id="expertise">
+        <div class="subsection-header">
+          <h2 class="subsection-title">Mon Expertise</h2>
+          <p class="subsection-subtitle">
+            <p>
+            Je transforme des concepts créatifs en expériences
+            utilisateur fluides et engageantes. Mon approche combine recherche
+            UX approfondie, prototypage itératif et développement technique de
+            pointe pour garantir des résultats qui dépassent les attentes.
+          </p>
+          <p>
+            Spécialisé dans les animations web avancées (GSAP, Three.js, Framer
+            Motion), j'accorde une attention particulière aux micro-interactions
+            et aux transitions qui font toute la différence dans l'engagement
+            utilisateur.
+          </p>
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon">🎨</div>
+            <h3>UI Design</h3>
+            <p>
+              Création d'interfaces visuellement attrayantes et cohérentes.
+              Design systems, typographie, color theory et composition visuelle
+              pour des expériences mémorables.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🧠</div>
+            <h3>UX Research</h3>
+            <p>
+              Analyse approfondie des comportements utilisateurs, tests
+              d'utilisabilité, personas et user journeys pour des solutions
+              centrées sur l'humain.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Front-End Dev</h3>
+            <p>
+              Développement performant avec React, Vue.js .
+              Architecture scalable, optimisation des performances et code
+              maintenable.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">✨</div>
+            <h3>Animations Web</h3>
+            <p>
+              Maîtrise de GSAP, Three.js et animations CSS avancées.
+              Micro-interactions, transitions fluides et expériences immersives
+              à 60fps.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">♿</div>
+            <h3>Accessibilité</h3>
+            <p>
+              Conception inclusive respectant les standards WCAG. Navigation au
+              clavier, lecteurs d'écran et design pour tous.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>
+              Interfaces adaptatives pour tous les devices. Mobile-first,
+              progressive enhancement et expériences optimales sur tout écran.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subsection">
+        <div class="subsection-header">
+          <h2 class="subsection-title">Mon Processus</h2>
+          <p class="subsection-subtitle">
+            Une méthodologie éprouvée pour des résultats ciblés et réflechis
+          </p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="process-number">01</div>
+            <h3>Découverte</h3>
+            <p>
+              Analyse des besoins, recherche utilisateur et audit de l'existant
+              pour comprendre les enjeux.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">02</div>
+            <h3>Idéation</h3>
+            <p>
+              Brainstorming, wireframes et prototypes pour explorer les
+              solutions possibles.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">03</div>
+            <h3>Design</h3>
+            <p>
+              Création de l'interface finale, design system et spécifications
+              détaillées.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">04</div>
+            <h3>Développement</h3>
+            <p>
+              Implémentation technique avec code propre, animations fluides et
+              optimisation.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">05</div>
+            <h3>Test & Itération</h3>
+            <p>
+              Tests utilisateurs, corrections et améliorations continues basées
+              sur les retours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subsection">
+        <div class="subsection-header">
+          <h2 class="subsection-title">Technologies & Outils</h2>
+          <p class="subsection-subtitle">
+            Stack technique moderne pour des performances optimales
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon">⚛️</div>
+            <h3>Frameworks JS</h3>
+            <p>
+              React, Next.js, Vue.js, Nuxt.js. Maîtrise des écosystèmes
+              modernes et de leurs bonnes pratiques pour des applications
+              scalables.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎬</div>
+            <h3>Animation</h3>
+            <p>
+              GSAP, ScrollTrigger, Three.js, Framer Motion.
+              Création d'animations fluides et performantes qui captivent
+              l'utilisateur.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎨</div>
+            <h3>Design Tools</h3>
+            <p>
+              Adobe XD, Sketch, Illustrator, Photoshop. Prototypage
+              interactif et collaboration avec les équipes design.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔧</div>
+            <h3>Dev Tools</h3>
+            <p>
+              Git, Webpack, Vite, Docker. Workflows optimisés et
+              déploiements automatisés pour une productivité maximale.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📊</div>
+            <h3>Analytics & Testing</h3>
+            <p>
+              Google Analytics, Hotjar, Jest, Cypress. Mesure de performance et
+              tests automatisés pour garantir la qualité.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🚀</div>
+            <h3>Performance</h3>
+            <p>
+              Lighthouse, WebPageTest, optimisation Core Web Vitals. Sites
+              ultra-rapides avec temps de chargement minimal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="section-title">Projets Sélectionnés</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <h3>E-Commerce Luxe</h3>
+              <p>
+                Refonte complète d'une plateforme e-commerce avec animations
+                avancées et expérience utilisateur premium. Augmentation de 45%
+                du taux de conversion.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">GSAP</span>
+                <span class="tag">Node.js</span>
+              </div>
+              <a href="https://100sue.github.io/scoreur-event/" class="project-link">Voir le projet →</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <h3>Dashboard Analytics</h3>
+              <p>
+                Interface de visualisation de données en temps réel pour une
+                startup fintech. Design système complet et animations fluides.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">D3.js</span>
+                <span class="tag">WebSocket</span>
+              </div>
+              <a href="https://100sue.github.io/Scoreur-MLK-edition2/" class="project-link">Voir le projet →</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <h3>Portfolio 3D Interactif</h3>
+              <p>
+                Expérience web immersive combinant WebGL et interactions
+                gestuelles. Primé Best Innovation 2024.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Three.js</span>
+                <span class="tag">Shaders</span>
+                <span class="tag">GSAP</span>
+              </div>
+              <a href="#" class="project-link">Voir le projet →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <h2 class="section-title">Parcours</h2>
+        <div class="timeline">
+          <div class="timeline-progress"></div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">1996 - 1997</div>
+              <h3>DEUG d'A.E.S</h3>
+              <h4>Université Panthéon-Assas, Paris II</h4>
+              <p>
+                Diplôme d'études universitaires générales d'Administration 
+                Economique et Sociale.
+              </p>
+            </div>
+            <div></div>
+          </div>
+          <div class="timeline-item">
+            <div></div>
+            <div class="timeline-content">
+              <div class="timeline-date">1997 - 1998</div>
+              <h3>Licence de Gestion des Entreprises</h3>
+              <h4>Université Panthéon-Assas, Paris II</h4>
+              <p>
+                Licence d'Administration Economique et Sociale, spécialisation 
+                Gestion des Entreprises.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">2021 - 2022</div>
+              <h3>Bac+2 Développeur Web</h3>
+              <h4>OpenClassrooms Institute</h4>
+              <p>
+                Diplome de niv III au RNCP
+              </p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <h2>Travaillons ensemble</h2>
+          <p>
+            Un projet en tête ? Une idée à concrétiser ? <br> Contactez-moi pour
+            discuter de votre projet.
+          </p>
+
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="8eebc0df-fa72-4529-ab9b-3da918bb297b">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Votre nom"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="votre@email.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="Sujet de votre message"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Décrivez votre projet..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">
+              Envoyer le message
+            </button>
+          </form>
+
+          <div class="social-links">
+            <a href="#" title="LinkedIn">Li</a>
+            <a href="#" title="GitHub">Gh</a>
+            <a href="#" title="Dribbble">Dr</a>
+            <a href="#" title="Behance">Be</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Roland APPERT</h3>
+            <p>
+              Développeur front-end basé à Paris, disponible pour projets freelance
+              et collaborations.
+            </p>
+            <div class="footer-tech">
+              <span class="tech-badge">Vue.js</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">GSAP</span>
+              <span class="tech-badge">Three.js</span>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Accueil</a></li>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#projects">Projets</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Développement Web</a></li>
+              <li><a href="#">Animations</a></li>
+              <li><a href="#">Consulting</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Suivez-moi</h4>
+            <ul class="footer-links">
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Roland APPERT. Tous droits réservés.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Mentions légales</a>
+            <a href="#">Confidentialité</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
