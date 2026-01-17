@@ -23,7 +23,7 @@ const bgCamera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
   0.1,
-  1000
+  1000,
 );
 const bgRenderer = new THREE.WebGLRenderer({ canvas: bgCanvas, alpha: true });
 bgRenderer.setSize(window.innerWidth, window.innerHeight);
@@ -37,7 +37,7 @@ for (let i = 0; i < particlesCount * 3; i++) {
 }
 particlesGeometry.setAttribute(
   "position",
-  new THREE.BufferAttribute(posArray, 3)
+  new THREE.BufferAttribute(posArray, 3),
 );
 const particlesMaterial = new THREE.PointsMaterial({
   size: 0.02,
@@ -63,7 +63,7 @@ const charCamera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
   0.1,
-  1000
+  1000,
 );
 const charRenderer = new THREE.WebGLRenderer({
   canvas: charCanvas,
@@ -254,7 +254,7 @@ function animateChar() {
     sprite.position.set(
       Math.cos(sprite.userData.angle) * sprite.userData.radius,
       sprite.userData.heightOffset + Math.sin(time * 1.5 + i * 0.3) * 0.15,
-      Math.sin(sprite.userData.angle) * sprite.userData.radius
+      Math.sin(sprite.userData.angle) * sprite.userData.radius,
     );
     sprite.material.rotation += sprite.userData.rotationSpeed;
     sprite.material.opacity = 0.6 + Math.sin(time * 2 + i) * 0.3;
@@ -266,7 +266,7 @@ function animateChar() {
     p.position.set(
       Math.cos(p.userData.angle) * p.userData.radius,
       p.userData.height + Math.sin(time * 2 + i * 0.2) * 0.1,
-      Math.sin(p.userData.angle) * p.userData.radius
+      Math.sin(p.userData.angle) * p.userData.radius,
     );
   });
 
@@ -280,11 +280,11 @@ function animateChar() {
   } else if (currentSection === "philosophy") {
     characterGroup.rotation.x = Math.sin(time) * 0.05;
     symbolMeshes.forEach(
-      (s) => (s.userData.radius = 0.8 + (s.userData.angle % 3) * 0.2)
+      (s) => (s.userData.radius = 0.8 + (s.userData.angle % 3) * 0.2),
     );
   } else if (currentSection === "values") {
     screen.material.color.setHex(
-      Math.sin(time * 2) > 0 ? primaryColor : accentColor
+      Math.sin(time * 2) > 0 ? primaryColor : accentColor,
     );
   } else if (currentSection === "expertise") {
     symbolMeshes.forEach((s, i) => {
@@ -557,16 +557,16 @@ function initAnimations() {
 
   document.querySelectorAll("a, button").forEach((el) => {
     el.addEventListener("mouseenter", () =>
-      gsap.to(cursor, { scale: 1.5, duration: 0.3 })
+      gsap.to(cursor, { scale: 1.5, duration: 0.3 }),
     );
     el.addEventListener("mouseleave", () =>
-      gsap.to(cursor, { scale: 1, duration: 0.3 })
+      gsap.to(cursor, { scale: 1, duration: 0.3 }),
     );
   });
 
   // Magnetic effect on cards and interactive elements
   const magneticElements = document.querySelectorAll(
-    ".card, .cta-button, .project-card, .process-number, .contact-email, .social-links a"
+    ".card, .cta-button, .project-card, .process-number, .contact-email, .social-links a",
   );
 
   magneticElements.forEach((el) => {
@@ -595,7 +595,7 @@ function initAnimations() {
 
   // Parallax effect on sections
   const parallaxSections = document.querySelectorAll(
-    ".subsection, .projects, .about"
+    ".subsection, .projects, .about",
   );
 
   parallaxSections.forEach((section) => {
@@ -604,7 +604,7 @@ function initAnimations() {
       const x = (e.clientX - rect.left) / rect.width - 0.5;
       const y = (e.clientY - rect.top) / rect.height - 0.5;
 
-      const cards = section.querySelectorAll(".card, .project-image");
+      const cards = section.querySelectorAll(".card, .project-image, .card h3");
       cards.forEach((card, i) => {
         gsap.to(card, {
           x: x * (20 + i * 5),
@@ -618,7 +618,7 @@ function initAnimations() {
     });
 
     section.addEventListener("mouseleave", () => {
-      const cards = section.querySelectorAll(".card, .project-image");
+      const cards = section.querySelectorAll(".card, .project-image, .card h3");
       cards.forEach((card) => {
         gsap.to(card, {
           x: 0,
@@ -695,7 +695,7 @@ function initAnimations() {
   });
 
   // About section animations
-  gsap.from(".about-placeholder img", {
+  gsap.from(".about-placeholder video", {
     x: -100,
     opacity: 0,
     duration: 1,

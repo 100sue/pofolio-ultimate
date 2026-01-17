@@ -14,9 +14,11 @@
   --bg-light: #fbfbfd;
 }
 
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
-    "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue",
+    sans-serif;
   background: var(--primary);
   color: var(--text-light);
   overflow-x: hidden;
@@ -399,6 +401,11 @@ nav {
   }
 }
 
+.developer-image img {
+  width: 400px;
+  height: 400px;
+}
+
 .image-rings {
   position: absolute;
   top: 50%;
@@ -459,7 +466,8 @@ nav {
   font-weight: 700;
   color: white;
   text-transform: uppercase;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4),
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.4),
     inset -5px -5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
   cursor: pointer;
@@ -602,7 +610,9 @@ nav {
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .cta-button:hover {
@@ -632,6 +642,17 @@ nav {
   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
+.about-placeholder {
+  width: 100%;
+  height: 600px;
+  background: transparent;
+  border-radius: 20px;
+  position: relative;
+}
+.about-placeholder video {
+  width: 90%;
+  height: 580px;
+}
 .about-content {
   position: relative;
   z-index: 2;
@@ -707,7 +728,7 @@ nav {
   right: -20%;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.15), transparent);
+  background: radial-gradient(circle, #0071e3, transparent);
   border-radius: 50%;
   animation: float 15s ease-in-out infinite;
 }
@@ -729,7 +750,7 @@ nav {
   left: -15%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.1), transparent);
+  background: radial-gradient(circle, #0071e3, transparent);
   border-radius: 50%;
   animation: float 20s ease-in-out infinite reverse;
 }
@@ -785,7 +806,7 @@ nav {
 
 .subsection-subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--bg-light);
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -856,7 +877,8 @@ nav {
 .card:hover {
   transform: translateY(-15px) scale(1.02);
   border-color: var(--accent);
-  box-shadow: 0 30px 80px rgba(99, 102, 241, 0.3),
+  box-shadow:
+    0 30px 80px rgba(99, 102, 241, 0.3),
     0 0 0 1px rgba(99, 102, 241, 0.1) inset;
   background: linear-gradient(
     135deg,
@@ -881,7 +903,7 @@ nav {
   z-index: 2;
 }
 
-.card:hover .card-icon {
+.card:hover .card-icon  {
   transform: rotateY(360deg) scale(1.1);
   box-shadow: 0 20px 60px rgba(99, 102, 241, 0.6);
 }
@@ -889,7 +911,10 @@ nav {
 .card h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: var(--secondary);
 }
+
+
 
 .card p {
   color: #888;
@@ -1203,6 +1228,8 @@ nav {
   z-index: 2;
   max-width: 800px;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact h2 {
@@ -1221,6 +1248,10 @@ nav {
   color: #888;
   margin-bottom: 4rem;
   text-align: center;
+}
+.robo {
+  width: 60vw;
+  height: 60vh;
 }
 
 .contact-form {
